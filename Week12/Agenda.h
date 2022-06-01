@@ -2,6 +2,7 @@
 #include "Contact.h"
 #include "Prieten.h"
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -61,7 +62,7 @@ Prieten** Agenda::Prieteni()
 	Prieten *x[10];
 	int cont = 0;
 	for (int i = 0; i < count; i++)
-		if (v[i]->CeEste() == 0)
+		if (v[i]->CeEste() == prieten)
 			x[cont++] =	(Prieten*) v[i];
 
 	return x;

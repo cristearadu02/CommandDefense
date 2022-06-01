@@ -1,6 +1,7 @@
 #pragma once
 #include "Contact.h"
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -8,20 +9,15 @@ class Cunoscut : public Contact
 {
 	string nrT;
 public:
-	int CeEste() override;
 	Cunoscut(string name, string nrT);
 	void Print();
 };
 
 Cunoscut::Cunoscut(string name, string nrT)
 {
+	CeEstee = cunoscut;
 	this->name = name;
 	this->nrT = nrT;
-}
-
-int Cunoscut::CeEste()
-{
-	return 1;
 }
 
 void Cunoscut::Print()

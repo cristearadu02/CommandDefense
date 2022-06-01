@@ -1,18 +1,24 @@
 #pragma once
 #include <string>
+#include "ContactType.h"
+#include <iostream>
 
-using std::string;
+using namespace std;
 
 class Contact
 {
 protected:
 	string name;
+	ContactType CeEstee;
 public:
 	string getName()
 	{
 		return name;
 	}
-	virtual int CeEste() = 0;
+	ContactType CeEste()
+	{
+		return CeEstee;
+	}
 	virtual void Print() = 0;
 	//Contact();
 };

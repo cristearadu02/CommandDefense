@@ -1,6 +1,7 @@
 #pragma once
 #include <string.h>
 #include "Contact.h"
+#include <iostream>
 
 using namespace std;
 
@@ -10,17 +11,12 @@ class Prieten : public Contact
 	//date dataN;
 public:
 	Prieten(string name, string nrT, string adresa, string dataN);
-	int CeEste() override;
 	void Print();
 };
 
-int Prieten::CeEste()
-{
-	return 0;
-}
-
 Prieten::Prieten(string name, string nrT, string adresa, string dataN)
 {
+	CeEstee = prieten;
 	this->name = name;
 	this->nrT = nrT;
 	this->adresa = adresa;
